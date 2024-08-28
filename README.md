@@ -49,6 +49,23 @@
    nulo o vacío, devolver una cadena vacía. Si la clave es nula o vacía, entonces utiliza
    DCJ como valor predeterminado.
 
+   Análisis del problema:
+   Desarrollar una función que encripte un mensaje específico agregando una "clave" antes de cada vocal en el
+   mensaje original.
+   Parámetros de entrada: clave y mensaje.
+   Consideraciones:
+   * Se especifica que se tomarán en cuenta las vocales (minúsculas y mayúsculas), pero no
+   se tomarán en cuenta las vocales con acento.
+   * Si la clave es nula o vacía, se debe utilizar "DCJ" como valor predeterminado.
+   * Si el mensaje es nulo o vacío, se retornará una cadena vacía.
+   * La función debe respetar mayúsculas y minúsculas según el mensaje original.
+
+   Solución planteada:
+   1) Validar la entrada de la clave y el mensaje.
+   2) Iterar sobre cada caracter del mensaje.
+   3) Identificar las vocales y anteponer la clave.
+   4) Construir la cadena resultante.
+   5) Retornar la cadena encriptada.
 
 
 3. Suma a cero – 3.5 puntos
