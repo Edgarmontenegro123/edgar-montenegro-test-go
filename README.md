@@ -36,10 +36,12 @@
    podemos dar mantenimiento y seguridad de que nuestro sistema no falle debido a un cuello de botella en nuestra DB.
    
 2. Encripta tu mensaje – 3.5 puntos
+
    Has sido encargado de desarrollar una nueva forma de encriptar comunicaciones.
    Básicamente, cada vocal del mensaje de entrada deberá ser precedida por otra cadena,
    llamada la clave. La función recibirá dos parámetros de cadena: el primero será la clave y el
    segundo, el mensaje. La función devolverá una cadena.
+
    Ejemplo:
    Clave: dcj
    Mensaje: I love prOgrAmming!
@@ -53,6 +55,7 @@
    Desarrollar una función que encripte un mensaje específico agregando una "clave" antes de cada vocal en el
    mensaje original.
    Parámetros de entrada: clave y mensaje.
+
    Consideraciones:
    * Se especifica que se tomarán en cuenta las vocales (minúsculas y mayúsculas), pero no
    se tomarán en cuenta las vocales con acento.
@@ -67,20 +70,24 @@
    4) Construir la cadena resultante.
    5) Retornar la cadena encriptada.
 
-
 3. Suma a cero – 3.5 puntos
+
    Dado un arreglo de enteros, elimina todos los nodos consecutivos cuya suma sea cero y
    devuelve los nodos restantes. Un arreglo vacío también puede ser un resultado válido. Si se
    recibe un valor nulo, devuelve un arreglo vacío.
+
    Ejemplo:
+
    Entrada: [3, 4, -7, 5, -6, 2, 5, -1, 8]
    Salida: [5, 8]
 
    Análisis del problema:
+
    Dado un arreglo de enteros, necesitamos eliminar los elementos consecutivos cuya suma sea = 0, por
    último devolvemos lo que quedó del array original.
 
    Solución planteada:
+
    1) Verificamos si el arreglo entregado es nulo o vacío y devolvemos un array vacío.
    2) Iteramos sobre el array dando seguimiento sobre la suma de los subarray consecutivos.
    3) Sumamos los elementos y vamos almacenando sumas parciales con el fin de comparar el resultado.
@@ -90,6 +97,7 @@
 
 
 4. Aprendizaje – 1 puntos
+
    Se te ha asignado poder entender esta arquitectura para poder aplicarlo a un
    nuevo proyecto, se necesita que expliques a detalle cual es la función de cada
    término mostrado en la imagen, en caso de desconocer de uno de los términos,
@@ -100,7 +108,9 @@
 <img alt="" src = '/Images/arquitectura.png' height = '282' width="571">
 
    Respuesta:
+
    Según la arquitectura que muestra la imagen podemos ver:
+
    1) Client Apps: Se refiere a 2 interfaces de una aplicación, una para la versión desktop (web) y
    la otra para aplicaciones móviles (mobile). Serían las interfaces que utilizan nuestros usuarios, también
    conocidos como puntos de entrada para el sistema.
@@ -121,6 +131,7 @@
    cada microservicio reciba los datos que necesita procesar.
 
 5. Demostrando tus hallazgos – 1 puntos
+
    Se te ha asignado la tarea de presentar una nueva tecnología que mejorará el
    rendimiento del sistema de órdenes a un grupo de stakeholders que no son
    técnicos. La tecnología implica el uso de microservicios para mejorar la
@@ -130,6 +141,7 @@
    negocio?
 
    Respuesta:
+
    Además de mi experiencia como desarrollador web, tuve la oportunidad de trabajar por casi 10 años en la industria
    gastronómica, y al ser un servicio que en su gran mayoría todos hemos tenido la oportunidad de experimentar,
    creo que puede funcionar como una analogía fácil de entender. Imaginemos nuestro sistema de órdenes actual
