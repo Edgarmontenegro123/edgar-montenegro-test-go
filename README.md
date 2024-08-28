@@ -97,6 +97,8 @@
    mismo si existiera cosas que mejorarías agrégalo como un detalle junto a su ¿Por
    qué?
 
+<img alt="" src = '/Images/arquitectura.png' height = '282' width="571">
+
    Respuesta:
    Según la arquitectura que muestra la imagen podemos ver:
    1) Client Apps: Se refiere a 2 interfaces de una aplicación, una para la versión desktop (web) y
@@ -117,8 +119,6 @@
    el cual facilita la comunicación entre los diferentes servicios (normalmente de manera asíncrona para permitir
    la mejora en la capacidad de respuesta), además puede gestionar la distribución de mensajes, garantizando que
    cada microservicio reciba los datos que necesita procesar.
-
-   <img alt="" src = '/Images/arquitectura.png' height = '282' width="571">
 
 5. Demostrando tus hallazgos – 1 puntos
    Se te ha asignado la tarea de presentar una nueva tecnología que mejorará el
