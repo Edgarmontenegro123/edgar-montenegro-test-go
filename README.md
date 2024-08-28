@@ -97,6 +97,27 @@
    mismo si existiera cosas que mejorarías agrégalo como un detalle junto a su ¿Por
    qué?
 
+   Respuesta:
+   Según la arquitectura que muestra la imagen podemos ver:
+   1) Client Apps: Se refiere a 2 interfaces de una aplicación, una para la versión desktop (web) y
+   la otra para aplicaciones móviles (mobile). Serían las interfaces que utilizan nuestros usuarios, también
+   conocidos como puntos de entrada para el sistema.
+   2) API Gateway: Sería la API que actúa como intermediario y gestiona las solicitudes de parte del usuario.
+   En este punto podrían manejarse funciones como autenticación, autorizaciones y enrutamiento a los
+   diferentes microservicios.
+   3) Microservicios: En este punto podemos observar 4 microservicios diferentes, Catalog, Shopping Cart,
+   Discount y Ordering, por sus nombres podemos deducir que el aplicativo maneja 4 microservicios diferentes
+   que como su nombre indica tienen funciones diferentes, uno se encargaría de lo que es el catálogo de productos,
+   el segundo se encarga de lo que sería el carrito de compras, el siguiente se encarga de aplicar descuentos y el
+   último se encargaría de procesar la orden, la clave en este punto es la separación de responsabilidades.
+   4) Bases de Datos: En esta parte de la imagen podemos entender que cada microservicio tiene su propia DB,
+   lo que permite que las operaciones sean independientes y seguramente facilitan su escalabilidad, además de esta
+   manera podemos asegurarnos de que si un microservicio falla, no afectará a los otros microservicios.
+   5) Por último Message Broker: Como su nombre lo indica, esto sería una especie de intermediario de mensajes,
+   el cual facilita la comunicación entre los diferentes servicios (normalmente de manera asíncrona para permitir
+   la mejora en la capacidad de respuesta), además puede gestionar la distribución de mensajes, garantizando que
+   cada microservicio reciba los datos que necesita procesar.
+
    <img alt="" src = '/Images/arquitectura.png' height = '282' width="571">
 
 5. Demostrando tus hallazgos – 1 puntos
