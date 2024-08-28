@@ -95,3 +95,10 @@
    ¿Cómo explicarías esta nueva tecnología y sus beneficios en términos no técnicos
    para asegurar que todos comprendan su importancia y el impacto que tendrá en el
    negocio?
+
+
+Instrucciones para levantar el proyecto:
+
+   * Clonar el proyecto
+   * Desde el directorio raíz instalar dependencias: go mod tidy
+   * Ejecutar el proyecto: go run main.go

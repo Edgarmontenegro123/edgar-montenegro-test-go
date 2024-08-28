@@ -1,3 +1,3 @@
-module github.com/tu-usuario/think-us-challenge
+module github.com/Edgarmontenegro123/think-us-challenge
 
 go 1.22.2
