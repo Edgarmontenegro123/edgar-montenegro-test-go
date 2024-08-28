@@ -129,6 +129,26 @@
    para asegurar que todos comprendan su importancia y el impacto que tendrá en el
    negocio?
 
+   Respuesta:
+   Además de mi experiencia como desarrollador web, tuve la oportunidad de trabajar por casi 10 años en la industria
+   gastronómica, y al ser un servicio que en su gran mayoría todos hemos tenido la oportunidad de experimentar,
+   creo que puede funcionar como una analogía fácil de entender. Imaginemos nuestro sistema de órdenes actual
+   como un restaurante de gran tamaño, el cual posee una sola cocina que se encarga de manejar todas las
+   órdenes de todos los clientes. Mientras sea un día tranquilo cómo suelen ser los martes y miércoles,
+   todo funciona perfectamente. Pero cuando hablamos de un fin de semana, donde la cantidad de clientes es mayor
+   y los pedidos aumentan significativamente, generalmente los pedidos se atrasan, generan demora y los clientes
+   tienden a molestarse por la espera. A partir de esta situación, lo que se propone es dividir esa única cocina,
+   en "cocinas más pequeñas", donde cada una se especializa en un tipo de plato!. Esas "cocinas más pequeñas" serían
+   lo que en la industria IT conocemos como microservicios. Con esa nueva estructura, cuando llegan esos momentos de
+   recibir muchísimas órdenes, cada "cocina" puede trabajar de manera independiente e incluso de manera más rápida.
+   Eso significa que podríamos recibir o procesar una mayor cantidad de pedidos y a su vez reducir los tiempos
+   de espera de nuestros queridos clientes!. Además en caso de que alguna de las "pequeñas cocinas" tenga algún
+   problema, al dividirnos de esta manera, aseguramos que las otras "pequeñas cocinas" puedan seguir funcionando
+   con normalidad. Al adoptar esta nueva "tecnología", aseguramos que nuestro negocio esté cada vez mejor preparado
+   para manejar el crecimiento y que nuestros clientes reciban un mejor servicio.
+   En resumen, esta tecnología nos va a ayudar a mejorar la eficiencia operativa y la satisfacción de nuestros usuarios,
+   mientras que nuestro negocio podría crecer de manera rápida y segura!.
+
 
 # Instrucciones para levantar el proyecto:
 
