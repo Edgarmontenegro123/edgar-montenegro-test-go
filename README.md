@@ -2,7 +2,9 @@
 
 ## Piezas del pastel (10 puntos)
 1. Problemas de diseño – 1 puntos
+
    Has sido encargado de plantear una solución al siguiente problema.
+
    Imagina que tenemos un sistema escrito en cualquier lenguaje de programación compilado,
    este sistema se conecta a una base de datos SQL, el sistema funciona muy bien cuando hay
    baja demanda de transacciones, pero cuando la cantidad de transacciones aumenta el sistema
@@ -43,20 +45,28 @@
    segundo, el mensaje. La función devolverá una cadena.
 
    Ejemplo:
+
    Clave: dcj
+
    Mensaje: I love prOgrAmming!
+
    Esto debería devolver: dcjI ldcjovdcje prdcjOgrdcjAmmdcjing!
+
    No se tomarán en cuenta las vocales con acentos.
+
    Cuando se reciba una cadena vacía, debería devolver una cadena vacía. Si el mensaje es
    nulo o vacío, devolver una cadena vacía. Si la clave es nula o vacía, entonces utiliza
    DCJ como valor predeterminado.
 
    Análisis del problema:
+
    Desarrollar una función que encripte un mensaje específico agregando una "clave" antes de cada vocal en el
    mensaje original.
+
    Parámetros de entrada: clave y mensaje.
 
    Consideraciones:
+
    * Se especifica que se tomarán en cuenta las vocales (minúsculas y mayúsculas), pero no
    se tomarán en cuenta las vocales con acento.
    * Si la clave es nula o vacía, se debe utilizar "DCJ" como valor predeterminado.
@@ -64,6 +74,7 @@
    * La función debe respetar mayúsculas y minúsculas según el mensaje original.
 
    Solución planteada:
+
    1) Validar la entrada de la clave y el mensaje.
    2) Iterar sobre cada caracter del mensaje.
    3) Identificar las vocales y anteponer la clave.
@@ -94,7 +105,6 @@
    4) Eliminamos los elementos de los subarray que sumen 0.
    5) Repetimos el proceso con el fin de eliminar todas las opciones posibles.
    6) Retornamos el resultado del array final (puede ser un array vacío).
-
 
 4. Aprendizaje – 1 puntos
 
@@ -136,6 +146,7 @@
    rendimiento del sistema de órdenes a un grupo de stakeholders que no son
    técnicos. La tecnología implica el uso de microservicios para mejorar la
    escalabilidad y reducir el tiempo de respuesta.
+
    ¿Cómo explicarías esta nueva tecnología y sus beneficios en términos no técnicos
    para asegurar que todos comprendan su importancia y el impacto que tendrá en el
    negocio?
@@ -144,12 +155,14 @@
 
    Además de mi experiencia como desarrollador web, tuve la oportunidad de trabajar por casi 10 años en la industria
    gastronómica, y al ser un servicio que en su gran mayoría todos hemos tenido la oportunidad de experimentar,
-   creo que puede funcionar como una analogía fácil de entender. Imaginemos nuestro sistema de órdenes actual
-   como un restaurante de gran tamaño, el cual posee una sola cocina que se encarga de manejar todas las
-   órdenes de todos los clientes. Mientras sea un día tranquilo cómo suelen ser los martes y miércoles,
-   todo funciona perfectamente. Pero cuando hablamos de un fin de semana, donde la cantidad de clientes es mayor
-   y los pedidos aumentan significativamente, generalmente los pedidos se atrasan, generan demora y los clientes
-   tienden a molestarse por la espera. A partir de esta situación, lo que se propone es dividir esa única cocina,
+   creo que puede funcionar como una analogía fácil de entender.
+
+   Imaginemos nuestro sistema de órdenes actual como un restaurante de gran tamaño, el cual posee una sola cocina
+   que se encarga de manejar todas las órdenes de todos los clientes.
+   Mientras sea un día tranquilo cómo suelen ser los martes y miércoles, todo funciona perfectamente.
+   Pero cuando hablamos de un fin de semana, donde la cantidad de clientes es mayor y los pedidos aumentan
+   significativamente, generalmente los pedidos se atrasan, generan demora y los clientes tienden a molestarse
+   por la espera. A partir de esta situación, lo que se propone es dividir esa única cocina,
    en "cocinas más pequeñas", donde cada una se especializa en un tipo de plato!. Esas "cocinas más pequeñas" serían
    lo que en la industria IT conocemos como microservicios. Con esa nueva estructura, cuando llegan esos momentos de
    recibir muchísimas órdenes, cada "cocina" puede trabajar de manera independiente e incluso de manera más rápida.
