@@ -140,7 +140,7 @@
    el cual facilita la comunicación entre los diferentes servicios (normalmente de manera asíncrona para permitir
    la mejora en la capacidad de respuesta), además puede gestionar la distribución de mensajes, garantizando que
    cada microservicio reciba los datos que necesita procesar.
-
+   ---------------------------------------------------------------------------------------------------------------------
 
 5. Demostrando tus hallazgos – 1 puntos
 
