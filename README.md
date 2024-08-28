@@ -76,6 +76,18 @@
    Entrada: [3, 4, -7, 5, -6, 2, 5, -1, 8]
    Salida: [5, 8]
 
+   Análisis del problema:
+   Dado un arreglo de enteros, necesitamos eliminar los elementos consecutivos cuya suma sea = 0, por
+   último devolvemos lo que quedó del array original.
+
+   Solución planteada:
+   1) Verificamos si el arreglo entregado es nulo o vacío y devolvemos un array vacío.
+   2) Iteramos sobre el array dando seguimiento sobre la suma de los subarray consecutivos.
+   3) Sumamos los elementos y vamos almacenando sumas parciales con el fin de comparar el resultado.
+   4) Eliminamos los elementos de los subarray que sumen 0.
+   5) Repetimos el proceso con el fin de eliminar todas las opciones posibles.
+   6) Retornamos el resultado del array final (puede ser un array vacío).
+
 
 4. Aprendizaje – 1 puntos
    Se te ha asignado poder entender esta arquitectura para poder aplicarlo a un
