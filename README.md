@@ -11,6 +11,29 @@
    para receptar más cantidad de transacciones adaptándonos al cuello de botella de la base de
    datos?
 
+   Para resolver este problema me gustaría proponer varias soluciones posibles dependiendo del caso,
+   incluso podría ser una combinación de diferentes estrategias!
+
+   * La primera solución que pensaría sería refactorizar el código que maneja las solicitudes a la DB para
+   que funcione de una manera asíncrona si es que no está implementada dicha solución. Esto mejora la
+   capacidad del sistema para seguir aceptando solicitudes mientras se espera la respuesta de la DB.
+   * Otra solución es implementar un sistema de memoria cache, en el cual se pueden almacenar los resultados
+   de las consultas más frecuentes o de los datos que cambian con poca frecuencia. Esto va a reducir la cantidad
+   de solicitudes directas a la DB por un lado y por el otro va a mejorar la velocidad de respuesta de esos
+   datos que serían de lectura.
+   * También podríamos optimizar las consultas a la DB y utilizar índices, por ejemplo en vez de realizar
+   un SELECT * FROM... Podríamos analizar si es necesario traer todos los datos o solo una parte, esto hará
+   que el tiempo de ejecución sea menor.
+   * Analizar si es posible agregar una escalabilidad bien sea vertical u horizontal, la primera dando más
+   recursos como CPU o memoria para el procesamiento de datos y la segunda que permitiría repartir la carga entre
+   múltiples bases de datos por ejemplo.
+   * Teniendo en cuenta el punto anterior, de ser posible, podríamos separar los datos en 2 ó más bases de datos,
+   manejando por ejemplo los datos más críticos en una para que el resto de datos no compitan por recursos.
+   * Configurar el sistema para que escale automáticamente en función de la cantidad de peticiones. Esto
+   garantiza que nuestro sistema pueda manejar picos de transacciones sin necesidad de intervención manual.
+
+   Seguramente existen muchas soluciones más o menos costosas, pero para empezar con lo descrito anteriormente,
+   podemos dar mantenimiento y seguridad de que nuestro sistema no falle debido a un cuello de botella en nuestra DB.
    
 2. Encripta tu mensaje – 3.5 puntos
    Has sido encargado de desarrollar una nueva forma de encriptar comunicaciones.
@@ -25,6 +48,7 @@
    Cuando se reciba una cadena vacía, debería devolver una cadena vacía. Si el mensaje es
    nulo o vacío, devolver una cadena vacía. Si la clave es nula o vacía, entonces utiliza
    DCJ como valor predeterminado.
+
 
 
 3. Suma a cero – 3.5 puntos
