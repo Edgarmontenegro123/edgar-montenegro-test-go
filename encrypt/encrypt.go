@@ -1,17 +1,18 @@
 package encrypt
 
 import (
+	"errors"
 	"strings"
 )
 
-func EncryptMessage(key, message string) string {
+func EncryptMessage(key, message string) (string, error) {
 	// Key nil || ""
 	if key == "" {
 		key = "DCJ"
 	}
 	// Message nil || ""
 	if message == "" {
-		return ""
+		return "", errors.New("message cannot be empty")
 	}
 	// Vowels to consider
 	vowels := "aeiouAEIOU"
@@ -29,12 +30,12 @@ func EncryptMessage(key, message string) string {
 		// Add character to result string
 		result.WriteRune(char)
 	}
-	return result.String()
+	return result.String(), nil
 }
 
-func RemoveZeroSumSubArrays(arr []int) []int {
+func RemoveZeroSumSubArrays(arr []int) ([]int, error) {
 	if arr == nil {
-		return []int{}
+		return []int{}, errors.New("input array cannot be nil")
 	}
 
 	stack := []int{}
@@ -54,5 +55,5 @@ func RemoveZeroSumSubArrays(arr []int) []int {
 			stack = append(stack, num)
 		}
 	}
-	return stack
+	return stack, nil
 }
