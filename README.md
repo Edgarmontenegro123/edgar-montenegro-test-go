@@ -1,4 +1,4 @@
-# think-us-challenge
+# Edgar Montenegro / Test Go
 
 ## Piezas del pastel (10 puntos)
 1. Problemas de diseño – 1 puntos
